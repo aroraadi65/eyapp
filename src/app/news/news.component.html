@@ -1,0 +1,17 @@
+<div class="main-div">
+
+  <app-spinner *ngIf="showLoader"></app-spinner>
+  <p *ngIf="showLoader" style="text-align: center">Loading...</p>
+
+
+  <div *ngFor="let one of news" class="news-div">
+    <h6><a [href]=one.URL>
+        {{ one.Headline }}
+      </a>
+    </h6>
+
+    <p style="margin-bottom: 5px;"><b>Category: </b>{{ one.Category }}</p>
+    <p style="margin-bottom: 10px;"><b>Date: </b>{{ one.Date }}</p>
+  </div>
+
+</div>

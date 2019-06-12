@@ -1,0 +1,12 @@
+/* .container {
+  display: block;
+  width: 100%;
+  box-shadow: 3px 3px 3px #CCC;
+  border-radius: 10px;
+} */
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
